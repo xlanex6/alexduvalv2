@@ -1,0 +1,17 @@
+{
+  "name": "alexduvalv2",
+  "version": "1.0.0",
+  "description": "Personal Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex DUVAL",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.3"
+  }
+}
