@@ -1989,9 +1989,26 @@ var _particlesjsConfig = _interopRequireDefault(require("./particlesjs-config.js
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// particleJS
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 var particles = window.particlesJS;
-particles('bg', _particlesjsConfig.default); //
+particles('bg', _particlesjsConfig.default);
+var icons = document.getElementsByClassName("devicon");
+
+_toConsumableArray(icons).forEach(function (element) {
+  element.addEventListener("mouseover", function (event) {
+    event.target.classList.add('colored');
+  });
+  element.addEventListener("mouseleave", function (event) {
+    event.target.classList.remove('colored');
+  });
+});
 },{"particles.js/particles":"node_modules/particles.js/particles.js","./particlesjs-config.json":"particlesjs-config.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -2020,7 +2037,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58572" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61374" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

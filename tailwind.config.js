@@ -12,6 +12,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
+      bg: '#718096',
+
       black: '#000',
       white: '#fff',
 
@@ -416,6 +418,7 @@ module.exports = {
       '30': '30',
       '40': '40',
       '50': '50',
+      '-10': '-10',
     },
   },
   variants: {
